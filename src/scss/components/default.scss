@@ -31,3 +31,41 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title {
+  font-family: 'Oxanium';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130px;
+  color: #F5FBF2;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(-45%);
+    background: $purple;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%
+  }
+
+  span {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  margin-bottom: 85px; 
+}
+.title-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper {
+  padding-top: 100px !important;
+  overflow: visible !important;
+}
